@@ -4,7 +4,7 @@ import Home from './Home'
 import About from './About'
 import Contact from './Contact'
 import NotFound from './NotFound'
-
+import Products from './Products'
 const routes =[
     {
         path:'/',
@@ -22,10 +22,18 @@ const routes =[
         main:()=><Contact/>
     },
     {
+        path:'/products',
+        exact:false,
+        main:()=><Products/>
+    },
+    {
         path:'',
         exact:false,
         main:()=><NotFound/>
     },
+    
+  
+    
 ]
 
 
